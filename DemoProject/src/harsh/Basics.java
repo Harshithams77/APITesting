@@ -34,7 +34,8 @@ public class Basics {
 		    .then().assertThat().statusCode(200).body("scope", equalTo("APP")).header("Server","Apache/2.4.41 (Ubuntu)").extract().response().asString();
 		
 		System.out.println(response);
-		
+		System.out.println(response);
+		System.out.println(response);
 		JsonPath js=new JsonPath(response); //for parsing JSON
 		
 		
